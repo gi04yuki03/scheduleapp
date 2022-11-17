@@ -1,0 +1,17 @@
+ <div class="footer">
+    <h1>現在の日時 :
+<span id="text"></span>
+      
+<script type="text/javascript">
+    document.getElementById("text").innerHTML = showDay();
+  function showDay() {
+    var now = new Date();
+    var day = now.getDate();
+    var month = now.getMonth()+1;
+    var year = now.getFullYear();
+    var text = year + "年" + month + "月" + day + "日"; 
+    return text;
+  }
+  </script>
+    </h1>
+ </div>
