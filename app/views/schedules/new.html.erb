@@ -1,8 +1,12 @@
- <%= render "shared/header" %>
+<%= render "shared/header" %>
 <div class = "main">
 <h3>スケジュール新規作成</h3></div>
+
+
  
- <%= form_with model: @schedule do |f| %>
+ <%= form_with model: @schedule, local: true do |f| %>
+　　 <%= render 'shared/circle_error' %>
+      
    <table>
      <tr>
        <th><%= f.label :title ,"タイトル" %></th>
